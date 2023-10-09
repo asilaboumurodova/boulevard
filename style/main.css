@@ -1,0 +1,285 @@
+@import 'fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body{
+    font-family: Montserrat;
+    font-family: ProstoOne;
+}
+.container {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__nav {
+    background: #282828;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px 0;
+}
+
+
+.header__content {
+    display: flex;
+    
+}
+
+.header__logo {
+    width: 100px;
+    height: 53px; 
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-grow: 1;
+}
+
+.header__link {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.header__link:hover {
+    color: rgb(255, 123, 0);
+    transition: 0.5ms;
+}
+
+.header__button {
+    display: flex;
+    gap: 25px;
+
+}
+
+.header__banner {
+    background: url(../images/Header.png) no-repeat center / cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.header__title {
+    color: #FFF;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 75px;
+}
+
+.header__btn {
+    color: #171718;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: #FFF;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.header__btn:hover {
+    color: rgb(255, 123, 0);
+    transition: 0.5ms;
+}
+
+.static {
+    background: #151515;
+}
+.static-two{
+    background: #151515;
+}
+
+.main__content-right {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 30px;
+}
+
+.main__img-right {
+    padding-top: 30px;
+}
+.menu{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    display: none;
+}
+
+.main__text-right {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 500;
+    width: 538px;
+    display: flex;
+    align-items: center;
+}
+
+.main__content-left {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.main__text-left {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 500;
+    width: 540px;
+    height: 107px;
+    padding-top: 200px;
+}
+
+.main__content-center {
+    display: flex;
+    justify-content: space-around;
+}
+.main__img-center {
+    padding-top: 50px;
+    position: relative;
+}
+
+.main__img-center::before {
+    content: "";
+    width: 61px;
+    height: 1px;
+    background: #C4C4C4;
+    position: absolute;
+    bottom: 30%;
+    left: -78px;
+    transition: 0.7s linear;
+}
+.main__img-center::after {
+    content: "";
+    width: 61px;
+    height: 1px;
+    background: #C4C4C4;
+    position: absolute;
+    bottom: 30%;
+    right: -98px;
+    transition: 0.7s linear;
+}
+
+.text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    width: 333px;
+    padding-top: 200px;
+}
+
+.model {
+    background: #151515;
+    padding: 79px 0 55px 0;
+}
+
+.main__content-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 79px;
+}
+
+.main__item {
+    background: #FFF;
+    border-radius: 6px;
+    width: 255px;
+    height: 312px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.main__title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main__img-bottom {
+    margin: 10px 0;
+}
+
+.main__text-bottom {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main__btn {
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 7px 57px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.main__btn:hover {
+    background: #282828;
+    transition: 0.5ms;
+}
+
+.footer {
+    background: #282828;
+    padding: 80px 0px;
+    height: 200px;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__link {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer__link:hover {
+    color: rgb(255, 123, 0);
+    transition: 0.5ms;
+}
+
+.footer__card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
